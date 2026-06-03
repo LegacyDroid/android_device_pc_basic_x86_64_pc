@@ -1,5 +1,10 @@
 # Android device tree for basic x86_64 PC
 
+This device tree is meant to remain minimal, for kickstarting purposes.
+
+If you are looking forward to something that should have as many as possible working features on most of devices,
+please visit the [mainline/generic](https://github.com/LineageOS/android_device_mainline_generic) device tree.
+
 ```
 #
 # SPDX-FileCopyrightText: The LineageOS Project
