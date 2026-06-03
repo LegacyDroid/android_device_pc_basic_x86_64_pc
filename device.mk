@@ -65,3 +65,8 @@ PRODUCT_SHIPPING_API_LEVEL := 33
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH)
+
+ifeq ($(BASIC_X86_64_PC_USE_PRISTINE_KERNEL),true)
+PRODUCT_SOONG_NAMESPACES += \
+    kernel/mainline/configs
+endif
