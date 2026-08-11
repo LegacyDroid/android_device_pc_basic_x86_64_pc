@@ -41,6 +41,7 @@ Ensure to have the following partitions:
 |  system  |    2.5 GB    |  /dev/sda5   |
 |  vendor  |    256 MB    |  /dev/sda6   |
 | userdata |     2 GB     |  /dev/sda7   |
+| metadata |    16 MB     |  /dev/sda8   |
 
 4. Write system and vendor image
 
@@ -75,8 +76,8 @@ menuentry "Android Recovery" {
 
 Update the parameter `androidboot.partition_map`:
 
-- Make it reflect the actual partition setup. For this example: `sda5,system;sda6,vendor;sda7,userdata`
-- Escape ';' characters, by prepending '\\' before these. For this example: `sda5,system\;sda6,vendor\;sda7,userdata`
+- Make it reflect the actual partition setup. For this example: `sda5,system;sda6,vendor;sda7,userdata;sda8,metadata`
+- Escape ';' characters, by prepending '\\' before these. For this example: `sda5,system\;sda6,vendor\;sda7,userdata\;sda8,metadata`
 
 # Details about creating bootable GRUB disk
 
