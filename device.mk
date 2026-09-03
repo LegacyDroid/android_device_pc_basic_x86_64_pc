@@ -21,10 +21,6 @@ TARGET_SCREEN_HEIGHT := 300
 # Dalvik heap
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
-# HIDL
-PRODUCT_PACKAGES += \
-    vndservicemanager
-
 # Init
 PRODUCT_PACKAGES += \
     fstab.basic_x86_64_pc \
