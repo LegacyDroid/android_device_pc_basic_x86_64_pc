@@ -56,7 +56,7 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Shipping API level
-PRODUCT_SHIPPING_API_LEVEL := 33
+TARGET_FOLLOWS_LATEST_SHIPPING_API_LEVEL := true
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -66,3 +66,6 @@ ifeq ($(BASIC_X86_64_PC_USE_PRISTINE_KERNEL),true)
 PRODUCT_SOONG_NAMESPACES += \
     kernel/mainline/configs
 endif
+
+# VINTF
+TARGET_FOLLOWS_LATEST_VINTF_TARGET_LEVEL := true
