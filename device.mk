@@ -13,6 +13,7 @@ TARGET_SUPPORTS_USB_ACCESSORY_MODE := false
 TARGET_USES_FRAMEBUFFER_DISPLAY := true
 TARGET_LIGHT_HAL := false
 TARGET_GATEKEEPER_HAL := false
+TARGET_AUDIO_POLICY := common-handheld-7.0
 include device/mainline/common/optional/options.mk
 $(call inherit-product, device/mainline/common/mainline_common.mk)
 
